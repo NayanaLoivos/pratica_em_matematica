@@ -116,13 +116,71 @@ console.log(`${numerador}/${denominador}`);
     //4/7 - 21/7 = -17/7.
 
     //#MULTIPLICAÇÃO DE NÚMEROS INTEIROS (FRAÇÃO)
-        
+        //É simplesmente multiplicar, não precisamos mexer nos denominadores.
+        //1/2 * 2/3 = 2/6 = 1/3, ou você corta o 2 em cima e embaixo diretamente
+        //1/2 * 2/3 = 1*2/2*3 = 1/3
+
+    //#DIVISÃO DE NÚMEROS INTEIROS (FRAÇÃO)
+        //Até agora emos os inteiros não negativos (que são os naturais),
+        //inteiros negativos, e divisão leva a gente muitas vezes a números quebrados (que são os racionais).
+        //Dentro dos racionais, a multiplicação tem mais uma propriedade onde
+        //todo número diferente de zero tem um número chamado inverso multiplicativo.
+        //O QUE É INVERSO MULTIPLICATIVO?
+            //Se pegamos o 4, vai existir dentro dos números racionais um outro número que multiplicado 
+            //por 4 resulta no elemento neutro da multiplicação que é '1', ou seja, 
+            //4 * 1/4 = 4/1 * 1/4 = 4/4 que é igual a 1.
+        //O QUE O INVERSO MULTIPLICATIVO TEM HAVER COM A DIVISÃO?
+            //Quando pensamos na divisão entre dois números inteiros
+            //6/3 podemos usar essa divisão como: 6 * 1/3 (inverso multiplicativo do 3).
+        //QUAL A MOTIVAÇÃO DA DIVISÃO OLHANDO PARA O INVERSO MULTIPLICATIVO?
+            //A divisão das frações será uma multiplicação onde matemos a primeira fração e
+            //multiplicamos pelo inverso da segunda. Por exemplo: 3/4 / 2/3  resulta em
+            //3/4 * 3/2 = 9/8.
+            //Isso vem da relação que a divisão tem com a multiplicação, assim como
+            //a subtração tem com a soma. Então, dividir um número pelo outro é
+            //pegá-los e multiplicar pelo inverso multiplicativo do outro.
+            //E o inverso multiplicativo é simplesmente uma troca, ou seja, quem está
+            //em cima vai para baixo e quem está em baixo vai para cima.
+            //Portanto o inverso multiplicativo de 3 é 1/3, de 2/3 é 3/2 e assim por diante.
+        //COMO PENSAR NA DIVISÃO?
+            //4 dividido 2 = 2
+            //Mas sempre que olhar para uma divisão, pense nela como 
+            //o produto do primeiro número e o inverso multiplicativo do segundo.
+            //QUEM É O INVERSO MULTIPLICATIVO DE 2? 
+            //1/2, então,
+            //4 * 1/2 = 4/2 = 2/1 = 2.
+            //Sempre faça a pergunta: - qual número que multiplicado por 2 resulta 1?
+            //1/2 
+            //POR QUE?
+            //porque 2 * 1/2 = 2/2 = 1.
+            //PS: Dessa forma conseguimos entender porque as coisas em matemática
+            //são do jeito que são.
+            //O mesmo raciocínio vale para duas frações:
+            //2/5 / 3/7 = 2/5 * 7/3
+            //qual número que multiplicado por 3/7 resulta em 1?
+            //é o seu inverso, ou seja, 3/7 * 7/3 = 21/21 = 1.
+
+        //REFLEXÃO
+            //Quando conseguimos observar uma operação como inverso da outra,
+            //conseguimos concluir que na verdade só existe uma dentre elas, ou seja, 
+            //só existe soma não existe subtração, só existe multiplicação não existe divisão.
+            //pois em essência são a mesma coisa.
+
+
+
+
+
+
+
+
+
+
+
 
 
 
 
     
-
 
 
 
