@@ -74,17 +74,44 @@
                 //e por agora temos três valores diferentes entre si. Então, qual o recurso matemático que sabemos até agora que nos permite transformar 
                 //uma certa quantidade de valores em um só? É a média simples. Portanto, se tenho um RGB 20, 100, 28
                 console.log((120+100+228)/3);
-                //PORÉM, QUAL O PROBLEMA DE SOMAR TODOS OS VALORES NESSE CASO?
-                    //Porque se somando todos os valores, teremos 448 e quando fazemos isso
-                    //tiramos esses números da escala de 255 máximo permitida para eles no momento que somamos.
-                    //Mas se dividimos pelo números de valores somados, teremos 149 e encontramos um 
+                //PORÉM, QUAL O PROBLEMA DE APENAS SOMAR TODOS OS VALORES NESSE CASO?
+                    //Se somamos todos os valores acharemos um total de 448 e quando fazemos isso
+                    //não temos uma intensidade válida para cor, pois a escala é de 255 como máximo.
+                    //Portanto, no momento que apenas somamos, tiramos os valores da escala máxima permitida.
+                    //Porém, se os dividimos pelo números de valores somados, acharemos 149 e encontramos um 
                     //valor que cai dentro da escala válida entre 0 e 255. Então com a média eu consigo compor um único
                     //valor que está dentro da escala de referência que precisamos e com isso, teremos um tom de cinza.
                     //Porém, o cérebro humano não dá o mesmo peso para o vermelho, o verde e o azul, pois, sabemos que
                     //damos mais relevância para os tons de verde. E quem contribui menos para a luminosidade da cor é o azul.
                     //Por conta disso, a forma que calculamos não é a forma mais correta. O que precisamos fazer é uma média
-                    //ponderada que leve em consideração a forma como nosso cérebro funciona na percepção das cores.
-                
+                    //ponderada que leve em consideração a forma como nosso cérebro funciona sobre a percepção das cores.
+            //arquivo HTML para comparar das cores.
+
+//O QUE É A MÉDIA MÓVEL (OU ARITMÉTICA MÓVEL)?
+    //Ela pode ser tanto simples como ponderada. Nesse caso, se nada for especificado, presumimos que estamos falando da
+    //média simples. Mas qual a caraterística dessa média que a torna móvel? Quando temos muitos valores, é possível que 
+    //possamos entender esses dados ao longo de intervalos de tempo ou de espaço, dependendo do que estamos falando. Se estamos
+    //falando de COVID, teremos um média móvel no tempo, pois, queremos avaliar como está variando os óbitos e as infecção nos últimos
+    //7 dias, por exemplo. O intuito é entender os acontecimentos atuais e compará-los com um período no passado. Fato que se somassemos
+    //todos os valores que temos e divirmos, não será possível obter uma compreensão como essa. E se você olhar os dados de um só dia, 
+    //também não conseguimos medir se está melhorando ou piorando os quadros de COVID. Portanto, o ideal é agregar algum periodo porque 
+    //só assim teremos uma avaliação mais significativa, pois, num dia e outro podemos ter valores mais altos ou mais baixos destonando 
+    //facilmente um valor do outro. Por isso que dentro de uma variação específica conseguimos entender melhor o que certos dados significam,
+    //desde que usemos as comparações sempre dentro dessa mesma variação.
+    //Concluindo, a média móvel é móvel porque ela percorre ao longo do tempo ganhando um valor que está a frente e perdendo o valor que está mais atrás.
+    //Então, ela vai se movendo no tempo. Por exemplo, se quero a variação de 7 dias, conforme os dias passam, no oitavo dia, adiciono o oitavo dia no cálculo
+    //e removo o primeiro dia, no nono dia, adiciono o nono dia no cálculo e removo o segundo dia e assim sucessivamente.
+    //E agora como ela pode ser móvel no espaço? Podemos ver em aplicações que trabalham com dados geolocalizados. Se temos imagens de satélites, por exemplo,
+    //pode fazer sentido querer entender uma média dentro de uma determinada região no espaço como um determinado calculo de temperatura em relação a
+    //uma outra média de temperatura só que num outro grau de latitude ou longitude. É o tipo de coisa que acontece com processamento de imagem que chamamos de 
+    //filtro convolucional.
+    
+
+
+
+
+
+
 
 
 
