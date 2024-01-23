@@ -9,7 +9,7 @@
 //Existe lógica tanto no software quanto no hardware.
 
 //#PROPOSIÇÃO
-    //É uma sentença afirmativa que pode possuir apenas o valor binário, ou seja, que só pode ser classificada como true ou false. 
+    //É uma sentença afirmativa que possui apenas o valor binário, ou seja, que só pode ser classificada como true ou false. 
     //Se não podemos dizer 'isso é verdadeiro' ou 'isso é falso', então, não é uma proposição.
 
 //PS: Operações que o hardware faz são aritiméticas, lógicas e de deslocamento de bits.
@@ -40,10 +40,10 @@ if (idade >= 18 && idade < 70) { //Proposição composta
       0 & 1 = 0
       1 & 1 = 1
       0 & 0 = 0 */
-    //Como o computador calcularia os bits usando o conectivo 'E':
+    //Como o computador calcularia os bits usando o conectivo 'E'?:
     /*0000000011010101 & 
       1010101001011000 =
-      0000000001010100 */
+      0000000001010000 */
 
 //Conectivo 'OU' - 'OR' - || - v
 if ((idade >= 16 && idade < 18) || idade >= 70) { 
@@ -67,9 +67,11 @@ if ((idade >= 16 && idade < 18) || idade >= 70) {
       1 & 1 = 1
       1 & 0 = 1 */
 
-//PS: Computador usam circuitos eletrônicos, e por isso temos que ter alguma forma de diferenciar os estados
-      //dentro desses componentes eletrônicos para poder dizer que valor que tem, e isso é feito através dos
-      //impulsos elétricos que representamos com '0' e '1'. De forma simplificada, se passa corrente é igual a '1'
+//PS: Porque o computador representa tudo como 1 e 0? os computadores usam circuitos eletrônicos, 
+      //e por isso temos que ter alguma forma de diferenciar os estados dentro dos componentes
+      //eletrônicos para poder dizer que valor que tem, e uma das formas que temos de diferenciar é através
+      //dos impulsos elétricos que representamos com '0' e '1', ou seja, é realmente a intensidade da 
+      //corrente elétrica que passa por esse circuito.De forma simplificada, se passa corrente é igual a '1'
       // se não passa corrente é igual a '0'. E no caso da computação quântica temos mais que dois estados.
 
 
@@ -86,9 +88,11 @@ if ((idade >= 16 && idade < 18) || idade >= 70) {
 //PS1: Do falso podemos derivar qualquer coisa! Se partir de uma premissa falsa podemos dizer que a proposição como um todo é verdade, pois, de um absurdo qualquer coisa é verdade.
        //Por exemplo, se partimos de uma proposição falsa: "Se eu sou uma formiga amanhã vai chover",
        //estaremos partindo de uma coisa absurda e então amanhã pode ser qualquer coisa na verdade.
+       //Depois que dizemos que chover amanhã depende de eu ser uma formiga e eu não sou (é falso), desse absurdo qualquer coisa é verdade. Essa
+       //é a ideia de que do falso podemos derivar qualquer coisa. 
        //"Se fulano tivesse feito tal coisa teria sido tudo diferente." Sim, seria diferente, mas não podemos afirmar que o que estamos afirmando
        //seria o que teria acontecido, é falso isso.
-//PS2:É falso se partimos de uma premissa verdadeira e tentar fazer uma conclusão que é errada. 
+//PS2:Do contrário, é falso se partimos de uma premissa verdadeira e tentar fazer uma conclusão que é errada. 
         //Se partimos de alguma coisa que é verdade, não podemos concluir algo que é falso.
 
 /*  p <-> q
@@ -97,7 +101,7 @@ if ((idade >= 16 && idade < 18) || idade >= 70) {
     V <-> V = V
     F <-> F = V*/
 
-//PS: Só é verdadeiro apenas quando os dois temo mesmo valor.
+//PS: Só é verdadeiro apenas quando os dois termos possuem o mesmo valor.
 
 //#NEGAÇÃO DAS PROPOSIÇÕES
 //NEGAÇÃO SIMPLES
